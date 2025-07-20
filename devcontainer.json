@@ -1,0 +1,17 @@
+{
+  "name": "AiPrompt Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "pnpm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode"]
+    }
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "AiPrompt UI",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
